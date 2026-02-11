@@ -3,7 +3,6 @@ session_start();
 
 if (isset($_POST['username'])) {
     $_SESSION['user'] = $_POST['username'];
-    $_SESSION['user'] = $_POST['password'];
     $_SESSION['cart'] = [];
     header("Location: shop.php");
     exit;
